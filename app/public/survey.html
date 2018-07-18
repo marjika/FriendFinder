@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friends Survey</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <style>
+      .form-control:not(#name):not(#photo) {width:25%;}
+      #friendImage {display: table; margin: auto;}
+      label {font-weight: bold}
+      .modal-header {text-align: center; display: block;}
+      h1 {border-bottom: 2px solid black;}
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Survey Questions</h1>
+            <h2>About You</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name"><h4>Name (Required)</h4></label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="photo"><h4>Link to Photo Image (Required)</h4></label>
+                    <input type="text" class="form-control" id="photo" required>
+                </div>
+                <div class="form-group">
+                    <label for="Q1"><h4>Question 1</h4>You love outdoors activities, like hiking, skiing, and canoeing.</label>
+                    <select class="form-control" id="Q1" required>
+                        <option selected>Select your option</option>
+                        <option>1 (Strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Q2"><h4>Question 2</h4>High school was the best time of your life.</label>
+                    <select class="form-control" id="Q2" required>
+                        <option selected>Select your option</option>
+                        <option>1 (Strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Q3"><h4>Question 3</h4>You love to try new restaurants.</label>
+                    <select class="form-control" id="Q3" required>
+                        <option selected>Select your option</option>
+                        <option>1 (Strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Q4"><h4>Question 4</h4>You enjoy giving a presentation at work.</label>
+                    <select class="form-control" id="Q4" required>
+                        <option selected>Select your option</option>
+                        <option>1 (Strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Q5"><h4>Question 5</h4>The book is always better than the movie.</label>
+                    <select class="form-control" id="Q5"required>
+                        <option selected>Select your option</option>
+                        <option>1 (Strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Q6"><h4>Question 6</h4>If you could vacation with anyone, you would choose your friends.</label>
+                    <select class="form-control" id="Q6" required>
+                        <option selected>Select your option</option>
+                        <option>1 (Strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Q7"><h4>Question 7</h4>You have high aspirations for the future.</label>
+                    <select class="form-control" id="Q7" required>
+                        <option selected>Select your option</option>
+                        <option>1 (Strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Q8"><h4>Question 8</h4>Nothing compares to the awkwardness of a first date.</label>
+                    <select class="form-control" id="Q8" required>
+                        <option selected>Select your option</option>
+                        <option>1 (Strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Q9"><h4>Question 9</h4>You believe in God.</label>
+                    <select class="form-control" id="Q9" required>
+                        <option selected>Select your option</option>
+                        <option>1 (Strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Q10"><h4>Question 10</h4>Good work/life balance is the key to success.</label>
+                    <select class="form-control" id="Q10" required>
+                        <option selected>Select your option</option>
+                        <option>1 (Strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly agree)</option>
+                    </select>
+                </div>
+                <br>
+
+                <button type="submit" class="btn btn-primary btn-lg btn-block submit" id="my-form">Submit ✓</button>
+            </form>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6>Your new best friend is </h6>
+                    <h4 class="modal-title"></h4>
+                  </div>
+                  <div class="modal-body">
+                    <div id="friendImage"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+
+        </div>
+    </div>
+    <br>
+
+    <footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/marjika/FriendFinder">GitHub Repo</a></p>
+        </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).on('click','#my-form', function(event) {
+      event.preventDefault();
+      var newSurvey = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: [
+            parseInt($("#Q1").val().substr(0,1)),
+            parseInt($("#Q2").val().substr(0,1)),
+            parseInt($("#Q3").val().substr(0,1)),
+            parseInt($("#Q4").val().substr(0,1)),
+            parseInt($("#Q5").val().substr(0,1)),
+            parseInt($("#Q6").val().substr(0,1)),
+            parseInt($("#Q7").val().substr(0,1)),
+            parseInt($("#Q8").val().substr(0,1)),
+            parseInt($("#Q9").val().substr(0,1)),
+            parseInt($("#Q10").val().substr(0,1))
+        ]
+      };
+
+      console.log(newSurvey);
+
+      $.post("/api/friends", newSurvey,
+        function(data) {
+            $('#friendImage').empty();
+            $(".modal-title").empty();
+
+        console.log(data);
+        $(".modal-title").append(data.name);
+        var img = $('<img />').attr({
+            'src': data.photo,
+            'alt': 'Your Friend',
+            'width': 250
+        }).appendTo('#friendImage');
+        $("#myModal").modal("show");
+
+          // Clear the form when submitting
+          $("#name").val("");
+          $("#photo").val("");
+          $("#Q1").val("");
+          $("#Q2").val("");
+          $("#Q3").val("");
+          $("#Q4").val("");
+          $("#Q5").val("");
+          $("#Q6").val("");
+          $("#Q7").val("");
+          $("#Q8").val("");
+          $("#Q9").val("");
+          $("#Q10").val("");
+
+        });
+
+    });
+
+</script>
