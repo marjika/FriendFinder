@@ -20,13 +20,13 @@ The user takes the quiz and on submission (request object), a POST route `/api/f
 
 ![Client side of survey](./images/survey.gif)
 
-#### API Freinds List
+#### API Friends List
 
-The client can also click a link to see the friends list that is stored on the server side, through the use of a GET route with the url `/api/friends`. This displays a JSON of all possible friends.
+The client can also click a link to see the friends list that is stored on the server side, through the use of a GET route with the URL `/api/friends`. This displays a JSON of all possible friends.
 
 ![API friends list](./images/friendslist.JPG)
 
 ##### About this Application
 
-This repository is for a full stack Javascript application using Node, HTML, and .json files. 
+This repository is for a full stack JavaScript application using Node, HTML, and .json files. 
 The application allows the client to interact with a server to submit data, compare that to the data of other clients, and be matched to someone with similar personality traits. This project was created and is maintained by me, Marjika Howarth.
