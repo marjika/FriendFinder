@@ -37,7 +37,7 @@
                 <div class="form-group">
                     <label for="Q1"><h4>Question 1</h4>You love outdoors activities, like hiking, skiing, and canoeing.</label>
                     <select class="form-control" id="Q1" required>
-                        <option selected>Select your option</option>
+                        <option selected value="0">Select your option</option>
                         <option>1 (Strongly disagree)</option>
                         <option>2</option>
                         <option>3</option>
@@ -48,7 +48,7 @@
                 <div class="form-group">
                     <label for="Q2"><h4>Question 2</h4>High school was the best time of your life.</label>
                     <select class="form-control" id="Q2" required>
-                        <option selected>Select your option</option>
+                        <option selected value="0">Select your option</option>
                         <option>1 (Strongly disagree)</option>
                         <option>2</option>
                         <option>3</option>
@@ -59,7 +59,7 @@
                 <div class="form-group">
                     <label for="Q3"><h4>Question 3</h4>You love to try new restaurants.</label>
                     <select class="form-control" id="Q3" required>
-                        <option selected>Select your option</option>
+                        <option selected value="0">Select your option</option>
                         <option>1 (Strongly disagree)</option>
                         <option>2</option>
                         <option>3</option>
@@ -70,7 +70,7 @@
                 <div class="form-group">
                     <label for="Q4"><h4>Question 4</h4>You enjoy giving a presentation at work.</label>
                     <select class="form-control" id="Q4" required>
-                        <option selected>Select your option</option>
+                        <option selected value="0">Select your option</option>
                         <option>1 (Strongly disagree)</option>
                         <option>2</option>
                         <option>3</option>
@@ -81,7 +81,7 @@
                 <div class="form-group">
                     <label for="Q5"><h4>Question 5</h4>The book is always better than the movie.</label>
                     <select class="form-control" id="Q5"required>
-                        <option selected>Select your option</option>
+                        <option selected value="0">Select your option</option>
                         <option>1 (Strongly disagree)</option>
                         <option>2</option>
                         <option>3</option>
@@ -92,7 +92,7 @@
                 <div class="form-group">
                     <label for="Q6"><h4>Question 6</h4>If you could vacation with anyone, you would choose your friends.</label>
                     <select class="form-control" id="Q6" required>
-                        <option selected>Select your option</option>
+                        <option selected value="0">Select your option</option>
                         <option>1 (Strongly disagree)</option>
                         <option>2</option>
                         <option>3</option>
@@ -103,7 +103,7 @@
                 <div class="form-group">
                     <label for="Q7"><h4>Question 7</h4>You have high aspirations for the future.</label>
                     <select class="form-control" id="Q7" required>
-                        <option selected>Select your option</option>
+                        <option selected value="0">Select your option</option>
                         <option>1 (Strongly disagree)</option>
                         <option>2</option>
                         <option>3</option>
@@ -114,7 +114,7 @@
                 <div class="form-group">
                     <label for="Q8"><h4>Question 8</h4>Nothing compares to the awkwardness of a first date.</label>
                     <select class="form-control" id="Q8" required>
-                        <option selected>Select your option</option>
+                        <option selected value="0">Select your option</option>
                         <option>1 (Strongly disagree)</option>
                         <option>2</option>
                         <option>3</option>
@@ -125,7 +125,7 @@
                 <div class="form-group">
                     <label for="Q9"><h4>Question 9</h4>You believe in God.</label>
                     <select class="form-control" id="Q9" required>
-                        <option selected>Select your option</option>
+                        <option selected value="0">Select your option</option>
                         <option>1 (Strongly disagree)</option>
                         <option>2</option>
                         <option>3</option>
@@ -136,7 +136,7 @@
                 <div class="form-group">
                     <label for="Q10"><h4>Question 10</h4>Good work/life balance is the key to success.</label>
                     <select class="form-control" id="Q10" required>
-                        <option selected>Select your option</option>
+                        <option selected value="0">Select your option</option>
                         <option>1 (Strongly disagree)</option>
                         <option>2</option>
                         <option>3</option>
@@ -162,7 +162,7 @@
                     <div id="friendImage"></div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                   </div>
                 </div>
                 
@@ -224,16 +224,16 @@
           // Clear the form when submitting
           $("#name").val("");
           $("#photo").val("");
-          $("#Q1").val("");
-          $("#Q2").val("");
-          $("#Q3").val("");
-          $("#Q4").val("");
-          $("#Q5").val("");
-          $("#Q6").val("");
-          $("#Q7").val("");
-          $("#Q8").val("");
-          $("#Q9").val("");
-          $("#Q10").val("");
+          $("#Q1").val("0");
+          $("#Q2").val("0");
+          $("#Q3").val("0");
+          $("#Q4").val("0");
+          $("#Q5").val("0");
+          $("#Q6").val("0");
+          $("#Q7").val("0");
+          $("#Q8").val("0");
+          $("#Q9").val("0");
+          $("#Q10").val("0");
 
         });
 

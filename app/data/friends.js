@@ -46,8 +46,39 @@ var friendsArray = [
             4,
             4
           ]
-      }
-      
+      },
+      {
+        "name":"Carl Fredricksen",
+        "photo":"https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/carl-fredricksen-up-1.79.jpg",
+        "scores":[
+            1,
+            3,
+            2,
+            2,
+            5,
+            2,
+            3,
+            3,
+            5,
+            4
+          ]
+      },
+      {
+        "name":"Ms. Valerie Frizzle",
+        "photo":"https://vignette.wikia.nocookie.net/p__/images/0/0f/Mrs._Frizzle.png/revision/latest?cb=20160505233220&path-prefix=protagonist",
+        "scores":[
+            5,
+            5,
+            5,
+            5,
+            3,
+            2,
+            4,
+            2,
+            4,
+            3
+          ]
+      }    
   ];
 
   module.exports = friendsArray;
